@@ -1,0 +1,25 @@
+{
+  "name": "agentic-design",
+  "displayName": "Agentic Design",
+  "version": "1.0.0",
+  "description": "Product design intelligence with RAG-powered analysis. Analyzes UI against best practices from a living Notion knowledge base. Includes design system persistence, code audit, and pattern extraction.",
+  "author": "30K Strategy",
+  "homepage": "https://yourdomain.com",
+  "repository": "https://github.com/your-org/agentic-design-skill",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "agentic-design",
+      "path": ".claude/skills/agentic-design/SKILL.md"
+    }
+  ],
+  "mcpServers": {
+    "notion": {
+      "command": "npx",
+      "args": ["-y", "@notionhq/notion-mcp-server"],
+      "env": {
+        "OPENAPI_MCP_HEADERS": "{\"Authorization\": \"Bearer ${NOTION_TOKEN}\", \"Notion-Version\": \"2022-06-28\"}"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    {
+      "id": "agentic-design",
+      "name": "Agentic Design",
+      "description": "RAG-powered product design intelligence for Claude Code",
+      "version": "1.0.0",
+      "type": "skills",
+      "installPath": ".claude/skills/agentic-design"
+    }
+  ]
+}
