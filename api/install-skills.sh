@@ -10,7 +10,7 @@
 #
 # --- CONFIGURATION ---
 REPO_OWNER="alexgilev"
-REPO_NAME="agentic-design-internal"
+REPO_NAME="agentic-design-skill"
 BRANCH="main"
 SKILL_NAME="agentic-design"
 # --- END CONFIGURATION ---
