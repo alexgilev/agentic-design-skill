@@ -370,6 +370,28 @@ Overall: [summary assessment with top 3 priorities to address]
 
 Fallback: If Notion MCP is unavailable, audit against Section 4 (Craft Foundations) and Section 5 (Avoidance List) embedded in this skill.
 
+### Post-Audit: Visual Annotation Prompt
+
+After presenting the visual audit findings, always ask the user:
+
+> "Would you like me to generate a visual annotated version of your screenshot with the suggestions marked directly on the UI?"
+
+If the user confirms:
+1. Generate an HTML file that overlays the original screenshot with numbered annotation markers (red dots/circles) at the approximate locations of each finding
+2. Each marker should correspond to a numbered finding from the audit report
+3. Include a legend/sidebar listing each number with its finding summary
+4. The HTML file should be self-contained and openable in any browser
+5. Save the file as `visual-audit-[timestamp].html` in the project root
+6. Tell the user to open it in their browser to see the annotated view
+
+Annotation marker style:
+- Red circles with white numbers inside (20px diameter)
+- Critical findings: solid red (#EF4444)
+- Warnings: orange (#F59E0B) 
+- Suggestions: blue (#3B82F6)
+- On hover, show the full finding text as a tooltip
+- Connecting lines from markers to a sidebar with the full audit details
+
 ---
 
 ## 8. Communication Style
