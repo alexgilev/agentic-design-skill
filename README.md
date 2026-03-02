@@ -14,8 +14,6 @@ For global install:
 curl -sL https://raw.githubusercontent.com/alexgilev/agentic-design-skill/main/api/install-skills.sh | bash -s -- --global
 ```
 
-> **Note:** Requires access to the private `agentic-design-internal` repo. The installer clones it via git.
-
 ## What it does
 
 Agentic Design analyzes UI against best practices pulled from a living Notion knowledge base. It enforces consistency, persists design decisions across sessions, and audits code for violations.
