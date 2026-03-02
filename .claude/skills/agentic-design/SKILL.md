@@ -329,6 +329,46 @@ Identify gaps in the Agentic knowledge base.
 1. List design decisions made in this session without Agentic principle backing
 2. Suggest new pages to add to the Notion knowledge base
 3. Offer to draft the principle page content
+4. 
+### /agentic-design:visual-audit
+
+Visual UI review against Agentic principles from Notion. This command accepts a screenshot (pasted into chat) instead of a code path.
+
+1. User pastes a screenshot of their current UI into the chat
+2. Analyze the visual interface for: layout and spacing consistency, visual hierarchy and typography scale, color usage and contrast, depth strategy consistency (shadows vs borders), component patterns and interaction affordances, navigation clarity and information architecture, accessibility concerns (contrast ratios, touch targets, readability), empty states, loading states, and error state coverage
+3. Query Notion for relevant principles across multiple categories:
+   - One search for the UI type (e.g., "dashboard design", "form patterns", "settings page")
+   - One search for the primary visual layer (e.g., "visual hierarchy", "spacing system", "typography")
+   - One search for interaction patterns visible in the screenshot (e.g., "data table", "navigation", "cards")
+   - One search for potential issues spotted (e.g., "cognitive load", "error handling", "accessibility")
+4. Cross-reference every visual observation against retrieved Agentic principles
+5. Report findings grouped by severity:
+   - **Critical**: Violations that directly harm usability or accessibility
+   - **Warning**: Inconsistencies that weaken the design system
+   - **Suggestion**: Opportunities to better align with Agentic principles
+6. For each finding, cite the specific Agentic principle by ID and score
+7. If system.md exists, also check visual consistency against recorded project decisions
+
+Format:
+```
+Visual Audit — [description of screenshot]
+
+Principles queried: [list of searches run]
+Principles applied: [count] across [count] categories
+
+Critical:
+1. [observation] — violates [ID] [principle name] (Score [N]): [specific guidance]
+
+Warnings:
+1. [observation] — conflicts with [ID] [principle name] (Score [N]): [recommendation]
+
+Suggestions:
+1. [observation] — per [ID] [principle name] (Score [N]): [opportunity]
+
+Overall: [summary assessment with top 3 priorities to address]
+```
+
+Fallback: If Notion MCP is unavailable, audit against Section 4 (Craft Foundations) and Section 5 (Avoidance List) embedded in this skill.
 
 ---
 
