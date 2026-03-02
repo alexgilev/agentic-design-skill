@@ -32,6 +32,7 @@ Agentic Design analyzes UI against best practices pulled from a living Notion kn
 | `/agentic-design:extract <path>` | Extract patterns from existing code |
 | `/agentic-design:query <topic>` | Query the Notion knowledge base directly |
 | `/agentic-design:gaps` | Find uncovered design decisions |
+| `/agentic-design:visual-audit` | Visual UI review against Agentic principles (paste screenshot) |
 
 ## Notion Setup
 
