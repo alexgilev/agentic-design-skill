@@ -391,6 +391,11 @@ Annotation marker style:
 - Suggestions: blue (#3B82F6)
 - On hover, show the full finding text as a tooltip
 - Connecting lines from markers to a sidebar with the full audit details
+Sidebar/legend style:
+- Light background (#FFFFFF or #F9FAFB) — never dark mode
+- Subtle border-left using the marker color for each finding
+- Dark text (#111827) for readability
+- Clean, minimal typography matching the audit report format
 
 ---
 
